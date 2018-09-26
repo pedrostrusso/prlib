@@ -2,5 +2,6 @@
 
 export(examplify)
 export(flip_vector)
+export(multi_lapply)
 export(stop_if)
 importFrom(stats,setNames)
