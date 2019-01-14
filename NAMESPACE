@@ -2,6 +2,7 @@
 
 export(examplify)
 export(flip_vector)
+export(function_file)
 export(multi_lapply)
 export(neighbors)
 export(stop_if)
