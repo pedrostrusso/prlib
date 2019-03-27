@@ -17,3 +17,10 @@ A data.frame with the given column as row names and without the column
 \description{
 Re-set the row names of a data.frame with a column and delete it from the df.
 }
+\examples{
+x <- head(mtcars)
+x$names <- rownames(x)
+rownames(x) <- NULL
+x <- name_rows(x, "names")
+x
+}

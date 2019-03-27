@@ -18,18 +18,18 @@ An object of class 'error'
 Stop execution on TRUE
 }
 \details{
-This is a convenience function that stops the running code when 
+This is a convenience function that stops the running code when
 \code{expr} is \code{TRUE} and displays the text in \code{error}.
 }
 \examples{
-# Using dontrun as the function returns an error 
+# Using dontrun as the function returns an error
 \dontrun{
 a <- 2
 stop_if(a==2, "a is equal to 2")
 
 # This is just a short form of
 if(a == 2){
-stop("a is equal to 2")
+    stop("a is equal to 2")
 }
 }
 }

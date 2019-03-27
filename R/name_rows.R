@@ -7,6 +7,11 @@
 #' @export
 #'
 #' @examples
+#' x <- head(mtcars)
+#' x$names <- rownames(x)
+#' rownames(x) <- NULL
+#' x <- name_rows(x, "names")
+#' x
 name_rows <- function(df, column){
     rownames(df) <- df[, column]
     df[, column] <- NULL

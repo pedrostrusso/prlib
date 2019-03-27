@@ -7,8 +7,9 @@
 multi_lapply(...)
 }
 \arguments{
-\item{...}{Arguments containing the list to be transformed, and functions to apply. The first
-argument should be the list, and following arguments should be the functions.}
+\item{...}{Arguments containing the list to be transformed, and functions to
+apply. The first argument should be the list, and following arguments should
+be the functions.}
 }
 \value{
 A list
@@ -20,6 +21,7 @@ Run multiple functions on a list
 This function is used as an alternative to piping consecutive lapplys
 }
 \examples{
-split_cars <- split(mtcars, rep(1:3, length.out=nrow(mtcars), each=ceiling(nrow(mtcars)/3)))
+split_cars <- split(mtcars, rep(1:3, length.out=nrow(mtcars),
+each=ceiling(nrow(mtcars)/3)))
 res <- multi_lapply(split_cars, t, as.data.frame)
 }
